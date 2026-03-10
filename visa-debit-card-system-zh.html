@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visa 金融卡系統 (2026) | 項目</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="side-text">項目</div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Josh Software.</a>
+      <div class="nav-right">
+        <nav class="menu">
+          <a href="index.html">首頁</a>
+          <a href="about.html">關於</a>
+          <a href="#overview">概述</a>
+          <a href="#build">架構</a>
+          <a href="#impact">影響</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language switcher">
+          <a class="active" href="visa-debit-card-system.html">英文</a>
+          <span class="divider">/</span>
+          <a href="visa-debit-card-system-zh.html">中文</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-main">
+    <section class="container project-hero" id="overview">
+      <div>
+        <p class="project-tag">項目 01</p>
+        <h1 class="project-title">Visa 金融卡系統 (2026)</h1>
+        <p class="project-subtitle">
+          我從零打造的Visa卡發行和支付處理系統，與Visa集成提供支付服務。該系統於2025年上線，目前線上已有超過千名用戶，數十萬筆交易紀錄。
+        </p>
+      </div>
+      <img
+        class="project-hero-image"
+        src="visa1.jpg"
+        alt="Visa debit card system diagram"
+      />
+    </section>
+
+    <section class="container project-content" id="build">
+      <article class="project-block">
+        <h2>技術棧</h2>
+        <p>
+          由golang開發，使用了Gin框架構建API服務，GORM作為ORM工具，Redis用於緩存和消息隊列，MySQL作為主要數據庫。繫統部署在AWS雲平台上，使用Docker容器化管理。
+        </p>
+      </article>
+
+      <article class="project-block" id="impact">
+        <h2>産品功能</h2>
+        <p>
+          產品可以提供用戶在虛擬錢包中儲值後，進行visa開卡，並透過卡片進行支付，支付過程會直接扣除錢包中的餘額，達到線上線下無縫接軌的支付體驗。系統還提供了用戶轉帳、交易紀錄查詢、餘額查詢、利息與紅利積分等功能，並且支持多種貨幣和跨境支付。
+        </p>
+      </article>
+
+      <article class="project-block">
+        <h2>項目鏈接</h2>
+        <p style="text-align: center;">
+          <a class="btn" href="https://www.eusd.com/" target="_blank">EUSD (外部連結)</a>
+        </p>
+      </article>
+
+    </section>
+  </main>
+
+</body>
+</html>
